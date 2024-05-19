@@ -18,7 +18,6 @@ function searchMatrix(matrix: number[][], target: number): boolean {
       colStart = colPivot + 1;
     }
   }
-  console.log("Row index: ", rowIndex);
   if (rowIndex === -1) return false;
   let rowStart = 0;
   let rowEnd = matrix[0].length - 1;

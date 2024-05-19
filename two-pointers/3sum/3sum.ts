@@ -1,7 +1,6 @@
 function threeSum(nums: number[]) {
   const solution: number[][] = [];
   const numsSorted = nums.sort((a, b) => a - b);
-  console.log("nums sorted: ", numsSorted);
   let solutionSet = new Set();
   let solutionString = "";
   for (let i = 0; i < nums.length; i++) {
@@ -38,7 +37,7 @@ function threeSum(nums: number[]) {
       }
     }
   }
-  console.log("solution: ", solution);
+  return solution;
 }
 
 threeSum([
